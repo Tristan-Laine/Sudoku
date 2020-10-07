@@ -40,12 +40,29 @@ public class StoryTrois {
         System.out.println(nombre);
         return nombre;
     }
+    public static boolean ContrainteSousSection(int[][] Tableau) {
+        boolean nombre = true;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int nb=1; nb < 9; nb++) {
+                    if ((Tableau[j][i] == Tableau[j][nb]) && (Tableau[j][i] != 0) && (i != nb)) {
+                        int Faux = Tableau[j][i];
+                        nombre = false;
+                        System.out.println(Faux + " est dans la sous-section.");
+                    }
+                }
+            }
+        }
+        System.out.println();
+        System.out.println(nombre);
+        return nombre;
+    }
 
     public static void main(String[] args) {
         int[][] boardEasy = {
                 {4, 0, 0, 1, 0, 2, 6, 8, 0},
                 {1, 0, 0, 0, 9, 0, 0, 0, 4},
-                {0, 3, 8, 0, 6, 4, 0, 1, 0},
+                {3, 0, 8, 0, 6, 4, 0, 1, 0},
                 {0, 0, 5, 0, 7, 1, 9, 2, 0},
                 {0, 2, 6, 0, 0, 9, 8, 0, 0},
                 {8, 0, 0, 2, 5, 0, 0, 0, 0},
@@ -54,7 +71,8 @@ public class StoryTrois {
                 {6, 0, 7, 9, 0, 5, 3, 0, 0},
         };
         TableauAffichage(boardEasy);
-        ContrainteLigne(boardEasy);
-        ContrainteColonne(boardEasy);
+        //ContrainteLigne(boardEasy);
+        //ContrainteColonne(boardEasy);
+        ContrainteSousSection(boardEasy);
     }
 }
