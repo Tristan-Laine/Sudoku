@@ -8,16 +8,11 @@ public class Main {
      */
 
     public static void TableauAffichage(int [][] Tableau){
-        int Ligne = 0;
-        int Colonne = 0;
 
-        while (Colonne < 9){
-            while (Ligne < 9){
+        for (int Colonne = 0; Colonne < 9; Colonne ++){
+            for (int Ligne = 0; Ligne < 9; Ligne ++){
                 System.out.print(" " + Tableau[Colonne][Ligne] + " ");
-                Ligne = Ligne + 1;
             }
-            Ligne = 0;
-            Colonne = Colonne + 1;
             System.out.println();
         }
     }
