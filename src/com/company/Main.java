@@ -2,10 +2,6 @@ package com.company;
 
 public class Main {
 
-    /**
-     * Fonction qui affiche le tableau
-     * @param Tableau
-     */
 
     public static void TableauAffichage(int [][] Tableau){
 
@@ -31,8 +27,16 @@ public class Main {
         }
         System.out.println();
         System.out.println(Nombre);
+        System.out.println();
         return Nombre;
     }
+
+
+
+
+
+
+
 
     public static boolean ContraintesColonne(int [][] Tableau){
         boolean Nombre = true;
@@ -48,9 +52,30 @@ public class Main {
         }
         System.out.println();
         System.out.println(Nombre);
+        System.out.println();
         return Nombre;
     }
 
+
+    public static boolean ContrainteSOUSsection(int[][] Tableau) {
+        boolean nombre=true;
+
+                for (int i = 0 ; i < 3; i++) {
+                    for (int j = 0 ; j < 3; j++) {
+                        for (int nb = 1; nb < 9; nb++) {
+                            if ((Tableau[j][i] == Tableau[j][nb]) && (Tableau[j][i] != 0) && (i != nb)) {
+                                int Faux = Tableau[j][i];
+                                nombre = false;
+                                System.out.print(Faux + " est déjà sur dans la sous section.");
+                            }
+                        }
+                        System.out.println(nombre);
+                    }
+                }
+        System.out.println();
+        System.out.println(nombre);
+        return nombre;
+    }
 
 
     public static void main(String[] args) {
@@ -58,7 +83,7 @@ public class Main {
 
                 int[][] boardEasy = {
                 {4, 0, 0, 1, 2, 2, 6, 8, 0},
-                {1, 0, 0, 0, 9, 0, 0, 0, 4},
+                {1, 0, 4, 0, 9, 0, 0, 0, 4},
                 {0, 3, 8, 0, 6, 4, 0, 1, 0},
                 {0, 0, 5, 0, 7, 1, 9, 2, 0},
                 {8, 2, 6, 0, 0, 9, 8, 0, 0},
@@ -71,6 +96,7 @@ public class Main {
     TableauAffichage(boardEasy);
     ContraintesLigne(boardEasy);
     ContraintesColonne(boardEasy);
+    ContrainteSOUSsection(boardEasy);
 
     }
 }

@@ -41,6 +41,13 @@ public class StoryTrois {
         return nombre;
     }
 
+
+
+
+
+
+
+
     public static void main(String[] args) {
         int[][] boardEasy = {
                 {4, 0, 0, 1, 0, 2, 6, 8, 0},
@@ -56,5 +63,6 @@ public class StoryTrois {
         TableauAffichage(boardEasy);
         ContrainteLigne(boardEasy);
         ContrainteColonne(boardEasy);
+
     }
 }
