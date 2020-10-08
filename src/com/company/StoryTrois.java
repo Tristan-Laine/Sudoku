@@ -40,7 +40,7 @@ public class StoryTrois {
         System.out.println("la Cologne est : " + nombre);
         return nombre;
     }
-    public static boolean ContrainteSousSection(int[][] Tableau, int nb) {
+    public static boolean ContrainteSousSectionGros1(int[][] Tableau, int nb) {
         boolean nombre = true;
         int compteur = 0;
         for (int i = 0; i < 3; i++) {
@@ -59,10 +59,242 @@ public class StoryTrois {
         return nombre;
     }
 
+    public static boolean ContrainteSousSection1( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros1(Tableau, i)){
+                isValid = true;
+            }
+        }
+        return isValid
+                ;
+    }
+    public static boolean ContrainteSousSectionGros2(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 0; i < 3 ; i++) {
+            for (int j = 3; j < 6; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
     public static boolean ContrainteSousSection2( int[][] Tableau){
         boolean isValid = false;
         for(int i = 1; i< 10; i++){
-            if(ContrainteSousSection(Tableau, i)){
+            if(ContrainteSousSectionGros2(Tableau, i)){
+                isValid = true;
+                System.out.println("ok");
+            }
+        }
+        return isValid;
+    }
+    public static boolean ContrainteSousSectionGros3(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 6; j < 9; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
+    public static boolean ContrainteSousSection3( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros3(Tableau, i)){
+                isValid = true;
+            }
+        }
+        return isValid
+                ;
+    }
+    public static boolean ContrainteSousSectionGros4(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 3; i < 6; i++) {
+            for (int j = 0; j < 3; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
+    public static boolean ContrainteSousSection4( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros4(Tableau, i)){
+                isValid = true;
+            }
+        }
+        return isValid
+                ;
+    }
+    public static boolean ContrainteSousSectionGros5(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 6; i < 9; i++) {
+            for (int j = 0; j < 3; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
+    public static boolean ContrainteSousSection5( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros5(Tableau, i)){
+                isValid = true;
+            }
+        }
+        return isValid
+                ;
+    }
+    public static boolean ContrainteSousSectionGros6(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 3; i < 6; i++) {
+            for (int j = 3; j < 6; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
+    public static boolean ContrainteSousSection6( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros6(Tableau, i)){
+                isValid = true;
+            }
+        }
+        return isValid
+                ;
+    }
+    public static boolean ContrainteSousSectionGros7(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 3; i < 6; i++) {
+            for (int j = 6; j < 9; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
+    public static boolean ContrainteSousSection7( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros7(Tableau, i)){
+                isValid = true;
+            }
+        }
+        return isValid
+                ;
+    }
+    public static boolean ContrainteSousSectionGros8(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 6; i < 9; i++) {
+            for (int j = 3; j < 6; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
+    public static boolean ContrainteSousSection8( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros8(Tableau, i)){
+                isValid = true;
+            }
+        }
+        return isValid
+                ;
+    }
+    public static boolean ContrainteSousSectionGros9(int[][] Tableau, int nb) {
+        boolean nombre = true;
+        int compteur = 0;
+        for (int i = 6; i < 9; i++) {
+            for (int j = 6; j < 9; j++) {
+                if(Tableau[i][j] == nb ) {
+                    compteur++;
+
+                }
+            }
+        }
+        if(compteur > 1){
+            nombre=false;
+        }
+        System.out.println();
+        System.out.println("la sous-section est : " + nombre);
+        return nombre;
+    }
+
+    public static boolean ContrainteSousSection9( int[][] Tableau){
+        boolean isValid = false;
+        for(int i = 1; i< 10; i++){
+            if(ContrainteSousSectionGros9(Tableau, i)){
                 isValid = true;
             }
         }
@@ -78,20 +310,28 @@ public class StoryTrois {
     }
 
     public static void main(String[] args) {
-        int[][] boardEasy = {
+             int[][] boardEasy = {
                 {4, 0, 0, 1, 0, 2, 6, 8, 0},
-                {4, 0, 0, 0, 9, 0, 0, 0, 4},
+                {1, 0, 0, 0, 9, 0, 0, 0, 4},
                 {0, 3, 8, 0, 6, 4, 0, 1, 0},
                 {0, 0, 5, 0, 7, 1, 9, 2, 0},
                 {0, 2, 6, 0, 0, 9, 8, 0, 0},
                 {8, 0, 0, 2, 5, 0, 0, 0, 0},
                 {9, 0, 3, 0, 0, 0, 0, 0, 8},
                 {2, 5, 0, 6, 0, 0, 1, 0, 7},
-                {6, 0, 7, 9, 0, 5, 3, 0, 0},
+                {6, 0, 7, 9, 0, 5, 3, 0, 0}
         };
         TableauAffichage(boardEasy);
         //ContrainteLigne(boardEasy);
         //ContrainteColonne(boardEasy);
+        ContrainteSousSection1(boardEasy);
         ContrainteSousSection2(boardEasy);
+        ContrainteSousSection3(boardEasy);
+        ContrainteSousSection4(boardEasy);
+        ContrainteSousSection5(boardEasy);
+        ContrainteSousSection6(boardEasy);
+        ContrainteSousSection7(boardEasy);
+        ContrainteSousSection8(boardEasy);
+        ContrainteSousSection9(boardEasy);
     }
 }
