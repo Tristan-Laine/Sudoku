@@ -302,7 +302,6 @@ public class StoryTrois {
                 ;
     }
 
-
     public static void ContainteGrille(int[][] Tableau) {
         boolean nombre = true;
         for (int i = 0; i < 8; i++){
