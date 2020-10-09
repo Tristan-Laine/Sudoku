@@ -1,6 +1,7 @@
 package com.company;
 
 public class StoryTroisBis {
+    static int compt = 0;
 
     public static void TableauAffichage(int[][] Tableau) {
 
@@ -10,6 +11,7 @@ public class StoryTroisBis {
             }
             System.out.println();
         }
+        compt++;
     }
 
     public static boolean ContrainteLigne(int[][] Tableau) {
@@ -24,8 +26,10 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("La ligne est : " + nombre);
+        compt++;
         return nombre;
     }
+
     public static boolean ContrainteColonne(int[][] Tableau) {
         boolean nombre=true;
         for(int j=0;j < 9;j++){
@@ -38,6 +42,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la Cologne est : " + nombre);
+        compt++;
         return nombre;
     }
     public static boolean ContrainteSousSectionGros1(int[][] Tableau, int nb) {
@@ -47,7 +52,6 @@ public class StoryTroisBis {
             for (int j = 0; j < 3; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -56,6 +60,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -66,6 +71,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -76,7 +82,6 @@ public class StoryTroisBis {
             for (int j = 3; j < 6; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -85,6 +90,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -96,6 +102,7 @@ public class StoryTroisBis {
                 System.out.println("ok");
             }
         }
+        compt++;
         return isValid;
     }
     public static boolean ContrainteSousSectionGros3(int[][] Tableau, int nb) {
@@ -105,7 +112,6 @@ public class StoryTroisBis {
             for (int j = 6; j < 9; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -114,6 +120,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -124,6 +131,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -134,7 +142,6 @@ public class StoryTroisBis {
             for (int j = 0; j < 3; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -143,6 +150,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -153,6 +161,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -163,7 +172,6 @@ public class StoryTroisBis {
             for (int j = 0; j < 3; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -172,6 +180,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -182,6 +191,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -192,7 +202,6 @@ public class StoryTroisBis {
             for (int j = 3; j < 6; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -201,6 +210,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -211,6 +221,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -221,7 +232,6 @@ public class StoryTroisBis {
             for (int j = 6; j < 9; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -230,6 +240,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -240,6 +251,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -250,7 +262,6 @@ public class StoryTroisBis {
             for (int j = 3; j < 6; j++) {
                 if(Tableau[i][j] == nb ) {
                     compteur++;
-
                 }
             }
         }
@@ -259,6 +270,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -269,6 +281,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -288,6 +301,7 @@ public class StoryTroisBis {
         }
         System.out.println();
         System.out.println("la sous-section est : " + nombre);
+        compt++;
         return nombre;
     }
 
@@ -298,6 +312,7 @@ public class StoryTroisBis {
                 isValid = true;
             }
         }
+        compt++;
         return isValid
                 ;
     }
@@ -337,6 +352,8 @@ public class StoryTroisBis {
         return MegaBool;
     }
 
+
+
     public static void main(String[] args) {
         int[][] boardEasy = {
                 {4, 4, 0, 1, 0, 2, 6, 8, 0},
@@ -363,6 +380,5 @@ public class StoryTroisBis {
         ContrainteSousSection9(boardEasy);*/
 
         TouteLesSousSection(boardEasy);
-
     }
 }
