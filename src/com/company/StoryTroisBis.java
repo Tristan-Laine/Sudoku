@@ -65,6 +65,9 @@ public class StoryTroisBis {
             if(ContrainteSousSectionGros1(Tableau, i)){
                 isValid = true;
             }
+            else{
+                return false;
+            }
         }
         return isValid
                 ;
@@ -95,6 +98,9 @@ public class StoryTroisBis {
                 isValid = true;
                 System.out.println("ok");
             }
+            else{
+                return false;
+            }
         }
         return isValid;
     }
@@ -122,6 +128,9 @@ public class StoryTroisBis {
         for(int i = 1; i< 10; i++){
             if(ContrainteSousSectionGros3(Tableau, i)){
                 isValid = true;
+            }
+            else{
+                return false;
             }
         }
         return isValid
@@ -152,6 +161,9 @@ public class StoryTroisBis {
             if(ContrainteSousSectionGros4(Tableau, i)){
                 isValid = true;
             }
+            else{
+                return false;
+            }
         }
         return isValid
                 ;
@@ -180,6 +192,9 @@ public class StoryTroisBis {
         for(int i = 1; i< 10; i++){
             if(ContrainteSousSectionGros5(Tableau, i)){
                 isValid = true;
+            }
+            else{
+                return false;
             }
         }
         return isValid
@@ -210,6 +225,9 @@ public class StoryTroisBis {
             if(ContrainteSousSectionGros6(Tableau, i)){
                 isValid = true;
             }
+            else{
+                return false;
+            }
         }
         return isValid
                 ;
@@ -238,6 +256,9 @@ public class StoryTroisBis {
         for(int i = 1; i< 10; i++){
             if(ContrainteSousSectionGros7(Tableau, i)){
                 isValid = true;
+            }
+            else{
+                return false;
             }
         }
         return isValid
@@ -268,6 +289,9 @@ public class StoryTroisBis {
             if(ContrainteSousSectionGros8(Tableau, i)){
                 isValid = true;
             }
+            else{
+                return false;
+            }
         }
         return isValid
                 ;
@@ -296,6 +320,9 @@ public class StoryTroisBis {
         for(int i = 1; i< 10; i++){
             if(ContrainteSousSectionGros9(Tableau, i)){
                 isValid = true;
+            }
+            else{
+                return false;
             }
         }
         return isValid
@@ -339,7 +366,7 @@ public class StoryTroisBis {
 
     public static void main(String[] args) {
         int[][] boardEasy = {
-                {4, 4, 0, 1, 0, 2, 6, 8, 0},
+                {4, 0, 0, 1, 0, 2, 6, 8, 0},
                 {1, 0, 0, 0, 9, 0, 0, 0, 4},
                 {0, 3, 8, 0, 6, 4, 0, 1, 0},
                 {0, 0, 5, 0, 7, 1, 9, 2, 0},
