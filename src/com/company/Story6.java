@@ -384,7 +384,7 @@ public class Story6 {
                         Tableau[Colonne][Ligne] = nb;
                         if (TouteLesContraintes(Tableau)) {  //valide
 
-                            
+
                         }
                         else {
                             Tableau[Colonne][Ligne] = 0;
