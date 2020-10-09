@@ -5,22 +5,22 @@ public class Story6 {
 
     public static void backtracing(int[][] Tableau) {
 
-        for (int j = 0; j < 9; j++) {       //init le j (colonne)
-            for (int i = 0; i < 9; i++) {    //init le i (ligne)
-                if (Tableau[i][j] == 0) {  //si le nombre du tableau = 0
-                    boolean bol = false;
-                    while (bol == false) {   //alors le nombre du tableau prend pour valeur 1
+        for (int Colonne = 0; Colonne < 9; Colonne ++) {
+            for (int Ligne = 0; Ligne < 9; Ligne++) {
+                for (int nb = 1; nb < 9; nb++) {
+                    if (Tableau[Colonne][Ligne] == 0) {
+                        Tableau[Colonne][Ligne] = nb;
+                        if //valide
+                            backtracing();
+                        else {
+                            Tableau[Colonne][Ligne] = 0;
+                        }
+
                     }
-                    //verifer le sudoku
-                    //if (sudoku valide)
-                    //
                 }
             }
-
-
         }
-
-
+        return false;
     }
 
 
