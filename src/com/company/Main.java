@@ -1,7 +1,7 @@
 
 
 
-<<<<<<< HEAD
+
         package com.company;
         import java.util.concurrent.TimeUnit;
 
@@ -37,7 +37,7 @@
         System.out.print(FAUX + " est déjà sur la ligne. ");
         }
         }
-=======
+
     public static void TableauAffichage(int [][] Tableau){
 
         for (int Colonne = 0; Colonne < 9; Colonne ++){
@@ -59,13 +59,13 @@
                     System.out.print(FAUX + " est déjà sur la ligne. ");
                 }
             }
->>>>>>> 3812f6a2637ec5f45b78e594a1eba6dd91d9a645
+
         }
         System.out.println();
         System.out.println(Nombre);
         System.out.println();
         return Nombre;
-<<<<<<< HEAD
+
         }
 
 
@@ -86,7 +86,7 @@
         System.out.print(FAUX + " est déjà sur la colonne. ");
         }
         }
-=======
+
     }
     public static boolean ContraintesLigneTOUT(int [][] Tableau){
         boolean Nombre = true;
@@ -119,13 +119,13 @@
                     System.out.print(FAUX + " est déjà sur la colonne. ");
                 }
             }
->>>>>>> 3812f6a2637ec5f45b78e594a1eba6dd91d9a645
+
         }
         System.out.println();
         System.out.println(Nombre);
         System.out.println();
         return Nombre;
-<<<<<<< HEAD
+
         }
 
 
@@ -189,7 +189,7 @@
 
 
 
-=======
+
     }
     public static boolean ContraintesColonneTOUT(int [][] Tableau){
         boolean Nombre = true;
@@ -282,4 +282,4 @@
 
     }
 }
->>>>>>> 3812f6a2637ec5f45b78e594a1eba6dd91d9a645
+
