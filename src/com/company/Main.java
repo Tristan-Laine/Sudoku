@@ -90,8 +90,8 @@ public class Main {
     public static boolean ContrainteSOUSsection(int[][] Tableau) {
         boolean nombre=true;
 
-                for (int i = 0 ; i < 3; i++) {
-                    for (int j = 0 ; j < 3; j++) {
+                for (int i = 0 ; i < 9; i = i + 3) {
+                    for (int j = 0 ; j < 9; j = j + 3) {
                         for (int n = 0; n < 3; n++) {
                             for (int nb = 0; nb < 3; nb++) {
                                 if ((Tableau[j][i] == Tableau[n][nb]) && (Tableau[j][i] != 0) && ((j != n) && (i != nb))){

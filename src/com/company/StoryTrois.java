@@ -301,7 +301,14 @@ public class StoryTrois {
         return isValid
                 ;
     }
+    /*public static boolean ContrainteSS( int[][] Tableau) {
+        for (int i = 0; i < 9; i = i + 3) {
+            for (int j = 0; j < 9; j = j + 3) {
 
+            }
+        }
+        return ;
+    }*/
 
     public static void ContainteGrille(int[][] Tableau) {
         boolean nombre = true;
