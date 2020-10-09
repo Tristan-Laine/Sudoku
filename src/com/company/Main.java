@@ -1,4 +1,7 @@
+ package com.company;
+import java.util.concurrent.TimeUnit;
 
+<<<<<<< HEAD
 
 
 
@@ -6,15 +9,18 @@
         import java.util.concurrent.TimeUnit;
 
 
+=======
+/*
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
 
         public class Main {
-                private static void calculation() throws InterruptedException {
+            private static void calculation() throws InterruptedException {
 
-                        //Sleep 2 seconds
-                        TimeUnit.SECONDS.sleep(2);
+                //Sleep 2 seconds
+                TimeUnit.SECONDS.sleep(2);
 
-                }
-
+            }
+        }
 
         public static void TableauAffichage(int [][] Tableau){
 
@@ -59,13 +65,19 @@
                     System.out.print(FAUX + " est déjà sur la ligne. ");
                 }
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
         }
         System.out.println();
         System.out.println(Nombre);
         System.out.println();
         return Nombre;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
         }
 
 
@@ -86,7 +98,10 @@
         System.out.print(FAUX + " est déjà sur la colonne. ");
         }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
     }
     public static boolean ContraintesLigneTOUT(int [][] Tableau){
         boolean Nombre = true;
@@ -119,13 +134,19 @@
                     System.out.print(FAUX + " est déjà sur la colonne. ");
                 }
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
         }
         System.out.println();
         System.out.println(Nombre);
         System.out.println();
         return Nombre;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
         }
 
 
@@ -189,7 +210,10 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
     }
     public static boolean ContraintesColonneTOUT(int [][] Tableau){
         boolean Nombre = true;
@@ -283,3 +307,7 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+*/
+>>>>>>> b22e7d284b913d3c710edd61337458c763e1ac9a
