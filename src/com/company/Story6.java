@@ -1,7 +1,7 @@
 package com.company;
 
 public class Story6 {
-
+    static int compt = 0;
     public static void TableauAffichage(int [][] Tableau){
 
         for (int Colonne = 0; Colonne < 9; Colonne ++){
@@ -379,19 +379,19 @@ public class Story6 {
     public static boolean backtracing(int[][] Tableau) {
          for (int Colonne = 0; Colonne < 9; Colonne ++) {
             for (int Ligne = 0; Ligne < 9; Ligne++) {
-                for (int nb = 1; nb < 9; nb++) {
-                    if (Tableau[Colonne][Ligne] == 0) {
+                if (Tableau[Colonne][Ligne] == 0) {
+                for (int nb = 1; nb <= 9; nb++) {
                         Tableau[Colonne][Ligne] = nb;
+                        compt++;
                         if (TouteLesContraintes(Tableau)) {  //valide
-
-
+                            if(backtracing(Tableau)){
+                                return true;
+                            }
                         }
-                        else {
-                            Tableau[Colonne][Ligne] = 0;
-                        }
+                        Tableau[Colonne][Ligne] = 0;
                     }
+                    return false;
                 }
-                return false;
             }
         }
         return true;
@@ -419,5 +419,7 @@ public class Story6 {
         backtracing(boardEasy);
 
         TableauAffichage(boardEasy);
+
+        System.out.println(compt);
     }
 }
